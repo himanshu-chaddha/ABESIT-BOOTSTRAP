@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid System</title>
+    <link rel="stylesheet" href="../bootstrap.css">
+    <style>
+        .pink {
+            background-color: hotpink;
+        }
+
+        .blue {
+            background-color: rgb(13, 213, 228);
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .newColor {
+            background-color: rgba(90, 20, 220, 1);
+        }
+
+        .myborder {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- row with two cols -->
+        <div class="row">
+            <div class="col-lg-6 pink">col lg 6</div>
+            <div class="col-lg-6 yellow">col lg 6</div>
+        </div>
+
+        <!-- row with threecols -->
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12 myborder">
+                <div class="row">
+                    <div class="col-md-6 blue">Half</div>
+                    <div class="col-md-6 newColor">Another half</div>
+
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 myborder">col lg 4</div>
+            <div class="col-md-3 col-sm-6 col-xs-12 myborder">col lg 4</div>
+            <div class="col-md-3 col-sm-6 col-xs-12 myborder">
+                <div class="row">
+                    <div class="col-md-6 newColor">Half</div>
+                    <div class="col-md-6 blue">
+                        <div class="row">
+                            <div class="col-md-6 blue">Again</div>
+                            <div class="col-md-6 yellow">Again</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- nested grids -->
+
+    </div>
+    
+</body>
+
+</html>
