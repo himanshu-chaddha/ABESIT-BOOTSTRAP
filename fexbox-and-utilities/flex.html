@@ -1,19 +1,67 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Flexbox</title>
 	<link rel="stylesheet" type="text/css" href="../bootstrap.css">
 </head>
-<body>
-<div class="container">
-	<h1 class="text-center display-4">FlexBox</h1>
-	<div>
-		<button class="btn btn-primary btn-lg">Large</button>
-		<button class="btn btn-warning btn-sm">Small</button>
-	</div>
-</div>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<body>
+	<div class="container">
+		<h1 class="text-center display-4">FlexBox</h1>
+		<div class="d-flex border border-dark justify-content-start align-items-baseline flex-column"
+			style="height: 200px;">
+			<button class="btn btn-primary btn-lg">Large</button>
+			<button class="btn btn-warning btn-sm">Small</button>
+		</div>
+		<div class="d-flex justify-content-between flex-column flex-md-row">
+			<button class="btn btn-dark btn-lg">Button</button>
+			<button class="btn btn-dark btn-lg">Button</button>
+			<button class="btn btn-dark btn-lg">Button</button>
+			<button class="btn btn-dark btn-lg">Button</button>
+			<button class="btn btn-dark btn-lg">Button</button>
+			<button class="btn btn-dark btn-lg">Button</button>
+			<button class="btn btn-dark btn-lg">Button</button>
+
+		</div>
+
+	</div>
+	<div class="row">
+		<div class="col-3">
+			<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+				<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+					aria-controls="v-pills-home" aria-selected="true">Home</a>
+				<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+					aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+				<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+					aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+				<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+					aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+			</div>
+		</div>
+		<div class="col-9">
+			<div class="tab-content" id="v-pills-tabContent">
+				<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+					aria-labelledby="v-pills-home-tab">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
+					odit amet nihil. Quae illo non delectus placeat rerum debitis dicta porro pariatur, vero sit
+					distinctio impedit doloremque vitae blanditiis quos?</div>
+				<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, possimus, laborum eveniet
+					molestiae nam iusto asperiores sit cupiditate tempore rem nihil debitis voluptas doloremque autem
+					aut soluta velit, quis quasi.</div>
+				<div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis aliquid assumenda velit
+					recusandae, esse quisquam provident quaerat nam debitis perferendis at. Labore provident incidunt
+					veniam beatae consequuntur numquam. Quam, explicabo.</div>
+				<div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, ducimus! Tempora porro doloribus
+					quibusdam possimus consequatur necessitatibus quaerat obcaecati qui vero eveniet suscipit sunt fugit
+					ipsa, voluptatibus facere corrupti illo.</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="../bootstrap.js"></script>
 </body>
+
 </html>
